@@ -1,10 +1,9 @@
 .about-img {
-  width: 276px;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
   @include media(desktop) {
     width: 375px;
-    position: absolute;
-    right: 52px;
+    // position: absolute;
+    // right: 52px;
   }
 }
 
@@ -13,16 +12,16 @@
   font-size: 29px;
   line-height: 118%;
   margin-bottom: 16px;
-  color: #fffefd;
   @include media(desktop) {
     font-size: 40px;
+    margin-bottom: 34px;
   }
 }
 
 .about-text {
+  font-weight: 500;
   font-size: 13px;
   line-height: 145%;
-  color: #fffefd;
   @include media(desktop) {
     font-size: 19px;
   }
@@ -30,16 +29,23 @@
 
 .about-wrapper {
   @include media(desktop) {
-    display: flex;
-    flex-direction: column;
-    max-width: 627px;
-    margin-top: 86.5px;
+    padding: 86.5px 0;
+    max-width: 657px;
+
+    // margin-top: 86.5px;
   }
 }
 
 .about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   @include media(desktop) {
-    padding-top: 86.5px;
-    padding-bottom: 86.5px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    // padding-top: 86.5px;
+    // padding-bottom: 86.5px;
   }
 }
