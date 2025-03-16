@@ -14,12 +14,54 @@
     
     <script type="module" crossorigin src="/stp-8301/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/stp-8301/assets/vendor-5f2d2a64.js">
-    <link rel="stylesheet" href="/stp-8301/assets/index-6e48c1a6.css">
+    <link rel="stylesheet" href="/stp-8301/assets/index-ca08d1fb.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">Header</nav>
+  <img class="logo" srcset="../public/logo.png 1x, ../public/logo@2x.png 2x" />
+
+  <!-- ------ mobile ------- -->
+  <button class="burger-menu js-open-menu" type="button">
+    <svg class="burger-icon" aria-label="open menu icon" width="31" height="22">
+      <use href="../public/sprite.svg#burger"></use>
+    </svg>
+  </button>
+
+  <!-- ------- desktop ------- -->
+
+  <nav class="desk-nav">
+    <ul class="header-nav-list">
+      <li class="header-nav-list-item">
+        <a href="./index.html">Home</a>
+      </li>
+      <li class="header-nav-list-item"><a href="#benefits">Benefits</a></li>
+      <li class="header-nav-list-item"><a href="#features">Features</a></li>
+      <li class="header-nav-list-item"><a href="#about">About</a></li>
+      <li class="header-nav-list-item"><a href="#gameplay">Gameplay</a></li>
+      <li class="header-nav-list-item"><a href="#faq">FAQ</a></li>
+      <li class="header-nav-list-item"><a href="#reviews">Reviews</a></li>
+      <li class="header-nav-list-item"><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- <svg class="line-icon" aria-label="line icon">
+    <use href="../public/sprite.svg#line"></use>
+  </svg> -->
 </header>
+
+<!-- <div class="mobile-menu">
+  <svg class="close-icon" aria-label="close menu icon" width="28" height="28">
+    <use href=""></use>
+  </svg>
+  <div class="menu-mobile-container">
+    <a href="#home">Home</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#gameplay">Gameplay</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</div> -->
 
     <main>
       <section class="home-section" id="home">
