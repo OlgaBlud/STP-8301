@@ -7,15 +7,24 @@
   background-color: #f5b600;
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 18px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 10px 16px 18px 16px;
   @include media(desktop) {
-    // padding-top: 14px;
-    // padding-bottom: 14px;
-    // padding-left: 128px;
+    padding: 16px 28px 22px 28px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 145%;
+    color: #fffefd;
     // justify-content: flex-start;
+  }
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  @include media(desktop) {
+    width: 44px;
+    height: 44px;
   }
 }
 
@@ -38,19 +47,12 @@
 // .line-icon {
 //   position: absolute;
 //   left: 0%;
+//   top: 1%;
 //   color: #ba6401;
+//   width: 100%;
 // }
 
-// .desk-nav {
-//   display: none; // Приховуємо для мобільних і планшетів
-//   @include media('desktop') {
-//     display: block; // Відображаємо на десктопах
-//   }
-// }
-
-// .burger-menu {
-//   display: block; // Показуємо на мобільних і планшетах
-//   @include media('desktop') {
-//     display: none; // Приховуємо на десктопах
-//   }
-// }
+.header-nav-list {
+  display: flex;
+  gap: 68px;
+}
