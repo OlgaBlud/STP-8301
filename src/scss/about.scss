@@ -1,1 +1,45 @@
+.about-img {
+  width: 276px;
+  margin-bottom: 16px;
+  @include media(desktop) {
+    width: 375px;
+    position: absolute;
+    right: 52px;
+  }
+}
 
+.about-title {
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 118%;
+  margin-bottom: 16px;
+  color: #fffefd;
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.about-text {
+  font-size: 13px;
+  line-height: 145%;
+  color: #fffefd;
+  @include media(desktop) {
+    font-size: 19px;
+  }
+}
+
+.about-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: column;
+    max-width: 627px;
+    margin-top: 86.5px;
+  }
+}
+
+.about-container {
+  @include media(desktop) {
+    padding-top: 86.5px;
+    padding-bottom: 86.5px;
+  }
+}
