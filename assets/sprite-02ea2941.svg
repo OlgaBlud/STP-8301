@@ -1,5 +1,11 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="google" viewBox="0 0 28 32">
+<path d="M17.599 10.865l-13.898-7.944c-0.175-0.101-0.394-0.096-0.563 0.006-0.175 0.101-0.282 0.282-0.282 0.485 0 0 0.006 0.732 0.011 1.938l10.124 10.124 4.608-4.608z"></path>
+<path d="M2.866 5.35c0.017 4.349 0.068 14.907 0.090 20.163l10.039-10.039-10.129-10.124z"></path>
+<path d="M25.553 15.411l-7.955-4.546-4.614 4.608 5.206 5.206 7.369-4.293c0.175-0.101 0.282-0.287 0.282-0.485 0-0.203-0.113-0.389-0.287-0.49z"></path>
+<path d="M2.951 25.513c0.011 1.876 0.017 3.076 0.017 3.076 0 0.203 0.107 0.389 0.282 0.485 0.175 0.101 0.389 0.101 0.563 0l14.383-8.389-5.206-5.206-10.039 10.034z"></path>
+</symbol>
 <symbol id="line" viewBox="0 0 19200 32">
 <path fill="none" stroke="#fe9925" style="stroke: var(--color1, #fe9925)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M0 16h19200"></path>
 </symbol>
