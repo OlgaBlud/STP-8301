@@ -1,30 +1,58 @@
-// .header {
-//   padding: 20px 0;
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #f5b600;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px 18px 16px;
+  @include media(desktop) {
+    padding: 16px 28px 22px 28px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 145%;
+    color: #fffefd;
+    // justify-content: flex-start;
+  }
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  @include media(desktop) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.burger-menu {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.desk-nav {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+// .line-icon {
+//   position: absolute;
+//   left: 0%;
+//   top: 1%;
+//   color: #ba6401;
+//   width: 100%;
 // }
 
-// .nav-list {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 40px;
-
-//   @include media(tablet) {
-//     justify-content: flex-start;
-//   }
-
-//   @include media(desktop) {
-//     justify-content: flex-end;
-//   }
-// }
-
-// .nav-link {
-//   font-weight: 500;
-//   letter-spacing: 0.02em;
-//   @include font(30, 40);
-//   color: $_header_color;
-// }
-
-// .nav-link:hover,
-// .nav-link:focus {
-//   color: $_header_accent_color;
-// }
+.header-nav-list {
+  display: flex;
+  gap: 60px;
+}
