@@ -70,12 +70,12 @@
 }
 
 .faq-list-item.is-active .faq-btn .faq-icon {
-  content: url('./images/faq/minus.png');
+  content: url('../images/faq/minus.png');
 }
 
 @media only screen and (min-resolution: 2dppx) {
   .faq-list-item.is-active .faq-btn .faq-icon {
-    content: url('./images/faq/minus@2x.png');
+    content: url('../images/faq/minus@2x.png');
   }
 }
 
