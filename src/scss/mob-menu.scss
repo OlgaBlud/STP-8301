@@ -1,0 +1,99 @@
+.mob-modal-overlay {
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mob-modal-overlay.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
+}
+
+.mob-menu-modal {
+  background-color: #bd8b0f;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+  max-width: 196px;
+}
+
+.mob-menu-list {
+  margin-bottom: 35px;
+}
+
+.mob-menu-list-item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 145%;
+  margin-bottom: 19px;
+}
+
+.mob-menu-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.mob-menu-link {
+  transition: color 150ms ease-in-out;
+}
+
+.mob-menu-link:hover {
+  color: #ffddb2;
+}
+
+.mob-menu-link:focus {
+  color: #ffba66;
+}
+
+.mob-menu-btn {
+  border-radius: 10px;
+  padding: 11px 16px;
+  min-width: 164px;
+  background: #509900;
+  border: none;
+  transition: background-color 150ms ease-in-out;
+}
+
+.mob-menu-btn:hover {
+  background-color: #438000;
+}
+
+.mob-menu-btn:focus {
+  background-color: #356600;
+}
+
+.mob-menu-btn-container {
+  display: flex;
+  min-width: 130px;
+}
+
+.mob-menu-google-img {
+  width: 30px;
+  height: 29px;
+  margin-right: 2px;
+}
+
+.mob-btn-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mob-btn-text {
+  font-size: 8px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.mob-btn-google-text {
+  font-size: 17px;
+  line-height: 100%;
+}
