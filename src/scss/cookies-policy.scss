@@ -1,0 +1,111 @@
+.additional-page-header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  @include media(desktop) {
+    padding-top: 36px;
+    padding-bottom: 53px;
+  }
+}
+.home-page-link {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.45;
+  @include media(desktop) {
+    font-size: 19px;
+  }
+}
+.home-page-link-img {
+  width: 23px;
+  @include media(desktop) {
+    width: 32px;
+  }
+}
+.info-page-section {
+  padding: 10px 0;
+  @include media(desktop) {
+    padding: 19px 0;
+  }
+}
+.info-page-last-section {
+  padding-bottom: 52px;
+  @include media(desktop) {
+    padding-bottom: 116px;
+  }
+}
+.info-page-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.18;
+  @include media(desktop) {
+    margin-bottom: 42px;
+    font-size: 52px;
+  }
+}
+.info-page-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include media(desktop) {
+    gap: 28px;
+  }
+}
+.info-page-text,
+.info-page-list-item {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.45;
+  @include media(desktop) {
+    font-size: 19px;
+  }
+}
+.info-page-section-title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 1.18;
+  @include media(desktop) {
+    margin-bottom: 34px;
+    font-size: 40px;
+  }
+}
+.info-page-subtitle {
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.18;
+  @include media(desktop) {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+.paragraph-margin {
+  margin-bottom: 16px;
+  @include media(desktop) {
+    margin-bottom: 34px;
+  }
+}
+.info-page-list {
+  list-style-type: disc;
+  padding-left: 16px;
+  @include media(desktop) {
+    padding-left: 28px;
+  }
+}
+
+.info-page-list-item-title {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.45;
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+.info-page-link {
+  text-decoration: underline;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
