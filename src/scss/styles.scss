@@ -12,7 +12,7 @@
 @import './privacy-policy.scss';
 @import './terms-conditions.scss';
 @import './cookies-modal.scss';
-:root  {
+:root {
   font-family: 'Nunito Sans', Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 19px;
   line-height: 28px;
@@ -27,11 +27,11 @@
 }
 
 section {
-  margin-top: 26px;
-  margin-bottom: 26px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   @include media(desktop) {
-    margin-top: 86px;
-    margin-bottom: 86px;
+    padding-top: 86px;
+    padding-bottom: 86px;
   }
 }
 
