@@ -15,7 +15,6 @@
   max-width: 228px;
   @include media(desktop) {
     font-size: 24px;
-    // margin-bottom: 19px;
     max-width: 1104px;
   }
 }
@@ -71,7 +70,7 @@
 }
 
 .faq-list-item.is-active .faq-btn .faq-icon {
-  content: url('../images/faq/minus.png');
+  content: url('./images/faq/minus.png');
 }
 
 @media only screen and (min-resolution: 2dppx) {
