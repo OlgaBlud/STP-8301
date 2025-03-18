@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: #f5b600;
+  background-color: #bd8b0f;
 }
 .header-wrap {
   margin: 0 auto;
@@ -22,6 +22,7 @@
 .logo {
   width: 30px;
   height: 30px;
+  border-radius: 4px;
   @include media(desktop) {
     width: 44px;
     height: 44px;
@@ -31,9 +32,24 @@
 .burger-menu {
   background-color: transparent;
   border: none;
+  padding: 0;
+
   @include media(desktop) {
     display: none;
   }
+}
+
+.burger-icon {
+  fill: #fdfeff;
+  transition: color 150ms ease-in-out;
+}
+
+.burger-menu:hover .burger-icon {
+  fill: #ffddb2;
+}
+
+.burger-menu:focus .burger-icon {
+  fill: #ffba66;
 }
 
 .desk-nav {
@@ -57,9 +73,16 @@
 }
 
 .header-nav-link {
-  @include media(desktop) {
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 1.45;
-  }
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.45;
+  transition: color 150ms ease-in-out;
+}
+
+.header-nav-link:hover {
+  color: #ffddb2;
+}
+
+.header-nav-link:focus {
+  color: #ffba66;
 }
