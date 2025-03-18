@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 320px;
-  padding: 10px 16px 7px 16px;
+  padding: 10px 16px 7.72px 16px;
   @include media(desktop) {
     max-width: 1200px;
     padding: 16px 28px 12px 28px;
@@ -83,11 +83,12 @@
 .thin-line {
   width: 100%;
   border: 0;
-  height: 1px;
+  height: 0.73px;
   background-color: #ba6401;
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 3.64px;
   @include media(desktop) {
+    height: 1px;
     margin-bottom: 5px;
   }
 }
