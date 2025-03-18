@@ -47,6 +47,7 @@
   border: none;
   font-weight: 500;
   margin-bottom: 20px;
+  transition: background-color 150ms ease-in-out;
   @include media(desktop) {
     min-width: 365px;
     position: absolute;
@@ -54,6 +55,14 @@
     padding: 24px 49px;
     margin-bottom: 0;
   }
+}
+
+.home-btn:hover {
+  background-color: #67ae19;
+}
+
+.home-btn:focus {
+  background-color: #356600;
 }
 
 .btn-container {
