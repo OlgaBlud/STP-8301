@@ -58,21 +58,20 @@
   padding: 11px 16px;
   min-width: 164px;
   background: #509900;
-  border: none;
   transition: background-color 150ms ease-in-out;
-}
-
-.mob-menu-btn:hover {
-  background-color: #438000;
-}
-
-.mob-menu-btn:focus {
-  background-color: #356600;
 }
 
 .mob-menu-btn-container {
   display: flex;
   min-width: 130px;
+}
+
+.mob-menu-btn:hover .mob-menu-btn-container {
+  background-color: #438000;
+}
+
+.mob-menu-btn:focus .mob-menu-btn-container {
+  background-color: #356600;
 }
 
 .mob-menu-google-img {
