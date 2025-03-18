@@ -32,10 +32,19 @@
 
 .footer-policies-link,
 .footer-policies-text {
+  transition: color ease-in-out 150ms;
   font-weight: 600;
   font-size: 13px;
   line-height: 1.45;
   @include media(desktop) {
     font-size: 19px;
   }
+}
+
+.footer-policies-link:hover,
+.footer-policies-link:focus {
+  color: $_hover_links;
+}
+.footer-policies-link:active {
+  color: $_active_links;
 }
