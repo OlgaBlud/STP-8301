@@ -10,10 +10,9 @@
 }
 
 .home-section {
-  margin-top: 78px;
-  color: #fffefd;
+  padding-top: 78px;
   @include media(desktop) {
-    margin-top: 89px;
+    padding-top: 175px;
   }
 }
 
@@ -24,13 +23,18 @@
   margin-bottom: 20px;
   @include media(desktop) {
     position: absolute;
+    top: 0;
     right: 117px;
     width: 234px;
+    margin-bottom: 0;
   }
 }
 
 .home-wrapper {
   position: relative;
+}
+
+.home-container {
   padding-top: 19px;
 }
 
@@ -39,22 +43,30 @@
   display: block;
   border-radius: 15px;
   padding: 17px 46px;
-  background-color: #5daa09;
+  background-color: $_light_green;
   border: none;
   font-weight: 500;
-  color: #fffefd;
   margin-bottom: 20px;
+  transition: background-color 150ms ease-in-out;
   @include media(desktop) {
     min-width: 365px;
     position: absolute;
     bottom: 0px;
     padding: 24px 49px;
+    margin-bottom: 0;
   }
+}
+
+.home-btn:hover {
+  background-color: #67ae19;
+}
+
+.home-btn:focus {
+  background-color: #356600;
 }
 
 .btn-container {
   display: flex;
-  // max-width: 194px;
 }
 
 .google-img {
@@ -89,9 +101,7 @@
 }
 
 .text-container {
-  display: block;
   margin-left: 8px;
-  text-align: start;
 }
 
 .unlock-text {
@@ -106,7 +116,6 @@
 }
 
 .home-description {
-  font-weight: 500;
   font-size: 13px;
   line-height: 145%;
   @include media(desktop) {
