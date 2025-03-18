@@ -24,7 +24,7 @@ body.no-scroll {
   right: 0;
   left: 0;
   z-index: 1000;
-  background-color: $_background_yellow;
+  background-color: $_add_bg_color;
   border-top: 4.5px solid $_additional_light_yellow;
   @include media(desktop) {
     border-top: 6px solid $_additional_light_yellow;
