@@ -17,17 +17,12 @@
     max-width: 1200px;
   }
 }
-// .footer-policies-list-item {
-// }
+
 .footer-policies-link,
 .footer-policies-text {
   font-weight: 600;
   font-size: 13px;
   line-height: 1.45;
-  //   -webkit-text-stroke-color: $_text_stroke_dark_orange;
-  //   -webkit-text-stroke-width: 0.95px;
-  //   -webkit-text-fill-color: #fff;
-
   @include media(desktop) {
     font-size: 19px;
   }
