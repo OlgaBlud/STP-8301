@@ -21,11 +21,9 @@
 
 .reviews-list-item-wrap {
   background-color: $_add_bg_color;
-  padding: 14px;
+  padding: 10px;
   border-radius: 19px;
-  height: 129px;
   @include media(desktop) {
-    height: 180px;
   }
 }
 
@@ -61,20 +59,16 @@
     font-size: 19px;
   }
 }
-// swiper
+
 .swiper {
   width: 288px;
-  //   height: 179px;
-  //   border: 1px solid red;
   @include media(desktop) {
     width: 1144px;
-    // height: 263px;
   }
 }
 
 .reviews-prev-btn,
 .reviews-next-btn {
-  //   border: 2px solid red !important;
   width: 23px;
   height: 23px;
   background-size: contain;
@@ -96,10 +90,6 @@
 .reviews-btn:hover {
   background-image: url('../images/reviews/arrow-left-hover@1x.png');
 }
-// .reviews-btn:active {
-//   background-image: url('../images/reviews/arrow-left-active@1x.png');
-// }
-
 .reviews-next-btn {
   transform: rotate(180deg);
 }
