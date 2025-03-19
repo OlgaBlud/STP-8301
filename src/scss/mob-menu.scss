@@ -46,11 +46,11 @@
 }
 
 .mob-menu-link:hover {
-  color: $_hover_text_color;
+  color: $_hover_orange;
 }
 
 .mob-menu-link:focus {
-  color: $_focus_text_color;
+  color: $_active_orange;
 }
 
 .mob-menu-btn {
@@ -63,11 +63,11 @@
 }
 
 .mob-menu-btn:hover {
-  background-color: $_hover_btn_color;
+  background-color: $_hover_green;
 }
 
 .mob-menu-btn:focus {
-  background-color: $_focus_btn_color;
+  background-color: $_active_green;
 }
 
 .mob-menu-btn-container {
