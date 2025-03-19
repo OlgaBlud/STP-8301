@@ -4,17 +4,18 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: #f5b600;
+  background-color: $_add_bg_color;
+  border-bottom: 5px solid #ba6401;
 }
 .header-wrap {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   max-width: 320px;
-  padding: 10px 16px 18px 16px;
+  padding: 10px 16px 7.72px 16px;
   @include media(desktop) {
     max-width: 1200px;
-    padding: 16px 28px 22px 28px;
+    padding: 16px 28px 12px 28px;
     align-items: center;
   }
 }
@@ -22,6 +23,7 @@
 .logo {
   width: 30px;
   height: 30px;
+  border-radius: 4px;
   @include media(desktop) {
     width: 44px;
     height: 44px;
@@ -31,9 +33,24 @@
 .burger-menu {
   background-color: transparent;
   border: none;
+  padding: 0;
+
   @include media(desktop) {
     display: none;
   }
+}
+
+.burger-icon {
+  fill: $_text_color;
+  transition: color 150ms ease-in-out;
+}
+
+.burger-menu:hover .burger-icon {
+  fill: $_hover_orange;
+}
+
+.burger-menu:focus .burger-icon {
+  fill: $_active_orange;
 }
 
 .desk-nav {
@@ -43,23 +60,35 @@
   }
 }
 
-// .line-icon {
-//   position: absolute;
-//   left: 0%;
-//   top: 1%;
-//   color: #ba6401;
-//   width: 100%;
-// }
-
 .header-nav-list {
   display: flex;
   gap: 60px;
 }
 
 .header-nav-link {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.45;
+  transition: color 150ms ease-in-out;
+}
+
+.header-nav-link:hover {
+  color: $_hover_orange;
+}
+
+.header-nav-link:focus {
+  color: $_active_orange;
+}
+
+.thin-line {
+  width: 100%;
+  border: 0;
+  height: 0.73px;
+  background-color: #ba6401;
+  margin-top: 0;
+  margin-bottom: 3.64px;
   @include media(desktop) {
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 1.45;
+    height: 1px;
+    margin-bottom: 5px;
   }
 }

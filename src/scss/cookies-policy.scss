@@ -104,8 +104,13 @@
   }
 }
 .info-page-link {
+  transition: color ease-in-out 150ms;
   text-decoration: underline;
   white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+.info-page-link:hover,
+.info-page-link:focus {
+  color: $_info_link-blue;
 }

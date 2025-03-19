@@ -24,7 +24,7 @@ body.no-scroll {
   right: 0;
   left: 0;
   z-index: 1000;
-  background-color: $_background_yellow;
+  background-color: $_add_bg_color;
   border-top: 4.5px solid $_additional_light_yellow;
   @include media(desktop) {
     border-top: 6px solid $_additional_light_yellow;
@@ -71,7 +71,7 @@ body.no-scroll {
   border: none;
   border-radius: 18px;
   padding: 14px;
-  min-width: 288px;
+  min-width: 284px;
   font-weight: 500;
   font-size: 23px;
   line-height: 1.18;
@@ -79,13 +79,31 @@ body.no-scroll {
   @include media(desktop) {
     border-radius: 24px;
     padding: 20px;
-    min-width: 463px;
+    min-width: 457px;
     font-size: 32px;
   }
 }
 .cookies-accept-btn {
   background-color: $_light_green;
+  transition: background-color ease-in-out 150ms;
+}
+
+.cookies-accept-btn:hover,
+.cookies-accept-btn:focus {
+  background-color: $_hover_green;
+}
+.cookies-accept-btn:active {
+  background-color: $_active_green;
 }
 .cookies-decline-btn {
   background-color: $_yellow_dark_orange;
+  transition: background-color ease-in-out 150ms;
+}
+.cookies-decline-btn:hover,
+.cookies-decline-btn:focus {
+  background-color: $_hover_orange;
+}
+
+.cookies-decline-btn:active {
+  background-color: $_active_orange;
 }
