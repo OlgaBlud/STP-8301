@@ -90,10 +90,16 @@
   }
 }
 
-.reviews-prev-btn {
+.reviews-btn {
   background-image: url('../images/reviews/arrow-left@1x.png');
 }
+.reviews-btn:hover {
+  background-image: url('../images/reviews/arrow-left-hover@1x.png');
+}
+// .reviews-btn:active {
+//   background-image: url('../images/reviews/arrow-left-active@1x.png');
+// }
 
 .reviews-next-btn {
-  background-image: url('../images/reviews/arrow-right@1x.png');
+  transform: rotate(180deg);
 }
