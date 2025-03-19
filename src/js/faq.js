@@ -7,10 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-const faqBtn = document.querySelector('.faq-btn');
+const faqBtns = document.querySelectorAll('.faq-btn');
 
-faqBtn.addEventListener('click', () => {
-  setTimeout(() => {
-    faqBtn.blur();
-  }, 100);
+faqBtns.forEach(faqBtn => {
+  faqBtn.addEventListener('click', () => {
+    setTimeout(() => {
+      faqBtn.blur();
+    }, 100);
+  });
 });
