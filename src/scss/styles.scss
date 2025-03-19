@@ -49,3 +49,47 @@ section {
     padding-right: 28px;
   }
 }
+
+.orange-gradient {
+  border-radius: 19px;
+  padding: 4px;
+  background: rgb(186, 100, 1);
+  background: linear-gradient(
+    0deg,
+    rgba(186, 100, 1, 1) 0%,
+    rgba(245, 186, 24, 1) 50%
+  );
+  @include media(desktop) {
+    padding: 6px;
+    border-radius: 26px;
+  }
+}
+
+.dark-orange-gradient {
+  background: rgb(178, 95, 1);
+  background: linear-gradient(
+    0deg,
+    rgba(178, 95, 1, 1) 0%,
+    rgba(236, 159, 81, 1) 50%
+  );
+  border-radius: 18px;
+  padding: 2px;
+  @include media(desktop) {
+    border-radius: 24px;
+    padding: 3px;
+  }
+}
+.green-gradient {
+  background: rgb(42, 106, 21);
+  background: linear-gradient(
+    0deg,
+    rgba(42, 106, 21, 1) 0%,
+    rgba(114, 203, 16, 1) 50%
+  );
+  border-radius: 18px;
+  padding: 2px;
+  @include media(desktop) {
+    border-radius: 24px;
+    padding: 3px;
+  }
+}

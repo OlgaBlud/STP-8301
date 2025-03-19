@@ -73,11 +73,11 @@ how-to-play-item:last-child {
 }
 .how-to-play-wrap {
   border-radius: 19px;
-  padding: 14px 14px 14px 19px;
+  padding: 10px 10px 10px 15px;
   background-color: $_add_bg_color;
   @include media(desktop) {
     border-radius: 26px;
-    padding: 20px 20px 20px 26px;
+    padding: 14px 14px 14px 20px;
   }
 }
 .how-to-play-item-title {
@@ -93,6 +93,7 @@ how-to-play-item:last-child {
   font-size: 14px;
   line-height: 1.45;
   @include media(desktop) {
+    max-width: 430px;
     font-size: 19px;
   }
 }
