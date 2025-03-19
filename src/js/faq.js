@@ -6,3 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
     showMultiple: true,
   });
 });
+
+const faqBtn = document.querySelector('.faq-btn');
+
+faqBtn.addEventListener('click', () => {
+  setTimeout(() => {
+    faqBtn.blur();
+  }, 100);
+});
