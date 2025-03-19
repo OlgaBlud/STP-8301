@@ -85,7 +85,25 @@ body.no-scroll {
 }
 .cookies-accept-btn {
   background-color: $_light_green;
+  transition: background-color ease-in-out 150ms;
+}
+
+.cookies-accept-btn:hover,
+.cookies-accept-btn:focus {
+  background-color: $_hover_green;
+}
+.cookies-accept-btn:active {
+  background-color: $_active_green;
 }
 .cookies-decline-btn {
   background-color: $_yellow_dark_orange;
+  transition: background-color ease-in-out 150ms;
+}
+.cookies-decline-btn:hover,
+.cookies-decline-btn:focus {
+  background-color: $_hover_orange;
+}
+
+.cookies-decline-btn:active {
+  background-color: $_active_orange;
 }
