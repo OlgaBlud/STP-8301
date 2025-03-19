@@ -46,12 +46,10 @@
   background-color: $_light_green;
   border: none;
   font-weight: 500;
-  margin: 1px;
   transition: background-color 150ms ease-in-out;
   @include media(desktop) {
     min-width: 359px;
     padding: 24px 46px;
-    margin: 1px;
   }
 }
 
