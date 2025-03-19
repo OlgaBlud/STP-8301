@@ -19,6 +19,11 @@
   }
 }
 
+.orange-gradient.gradient-block {
+  @include media(desktop) {
+    border-radius: 26px;
+  }
+}
 .reviews-list-item-wrap {
   background-color: $_add_bg_color;
   padding: 10px;
