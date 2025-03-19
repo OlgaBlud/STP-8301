@@ -31,10 +31,15 @@
 
 .faq-list-item {
   border-radius: 19px;
-  padding: 14px;
-  background: $_add_bg_color;
+  padding: 4px;
+  background: linear-gradient(
+    0deg,
+    rgba(186, 100, 1, 1) 0%,
+    rgba(245, 186, 24, 1) 50%
+  );
   @include media(desktop) {
-    padding: 20px;
+    padding: 6px;
+    border-radius: 26px;
   }
 }
 
@@ -112,5 +117,15 @@
   }
   .faq-list-item.is-active .faq-btn:focus .faq-icon {
     content: url('../images/faq/minus-focus@2x.png');
+  }
+}
+
+.gradient-container {
+  background: $_add_bg_color;
+  border-radius: 16px;
+  padding: 10px;
+  @include media(desktop) {
+    padding: 14px;
+    border-radius: 20px;
   }
 }
