@@ -2,6 +2,7 @@ const openButton = document.querySelector('.open-modal');
 const mobMenu = document.querySelector('.mob-modal-overlay');
 const menuLinks = document.querySelectorAll('.mob-menu-link');
 const googleBtn = document.querySelector('.mob-menu-btn');
+const homeBtn = document.querySelector('.home-btn');
 
 function openMenu() {
   mobMenu.classList.add('active');
@@ -28,6 +29,12 @@ mobMenu.addEventListener('click', event => {
 googleBtn.addEventListener('click', () => {
   setTimeout(() => {
     googleBtn.blur();
+  }, 100);
+});
+
+homeBtn.addEventListener('click', () => {
+  setTimeout(() => {
+    homeBtn.blur();
   }, 100);
 });
 
