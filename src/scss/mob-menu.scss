@@ -10,12 +10,13 @@
   z-index: 1000;
   display: flex;
   justify-content: flex-end;
+  transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
 }
 
 .mob-modal-overlay.active {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .mob-menu-modal {
@@ -24,6 +25,12 @@
   flex-direction: column;
   padding: 20px 16px;
   min-width: 196px;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-out;
+}
+
+.mob-modal-overlay.active .mob-menu-modal {
+  transform: translateX(0);
 }
 
 .mob-menu-list {
