@@ -19,7 +19,7 @@
 }
 
 .mob-menu-modal {
-  background-color: #bd8b0f;
+  background-color: $_add_bg_color;
   display: flex;
   flex-direction: column;
   padding: 20px 16px;
@@ -46,28 +46,28 @@
 }
 
 .mob-menu-link:hover {
-  color: #ffddb2;
+  color: $_hover_orange;
 }
 
 .mob-menu-link:focus {
-  color: #ffba66;
+  color: $_active_orange;
 }
 
 .mob-menu-btn {
   border-radius: 10px;
   padding: 11px 16px;
   min-width: 164px;
-  background: #509900;
+  background: $_light_green;
   border: none;
   transition: background-color 150ms ease-in-out;
 }
 
 .mob-menu-btn:hover {
-  background-color: #438000;
+  background-color: $_hover_green;
 }
 
 .mob-menu-btn:focus {
-  background-color: #356600;
+  background-color: $_active_green;
 }
 
 .mob-menu-btn-container {

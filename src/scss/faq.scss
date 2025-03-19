@@ -32,7 +32,7 @@
 .faq-list-item {
   border-radius: 19px;
   padding: 14px;
-  background: #bd8b0f;
+  background: $_add_bg_color;
   @include media(desktop) {
     padding: 20px;
   }
@@ -65,20 +65,52 @@
   justify-content: space-between;
 }
 
+.ac-panel {
+  overflow: hidden;
+}
+
 .faq-btn .faq-icon {
-  transition: transform 0.3s ease-in-out 150ms;
+  content: url('../images/faq/plus.png');
+  transition: content 150ms ease-in-out;
+}
+
+.faq-btn:hover .faq-icon {
+  content: url('../images/faq/plus-hover.png');
+}
+
+.faq-btn:focus .faq-icon {
+  content: url('../images/faq/plus-focus.png');
 }
 
 .faq-list-item.is-active .faq-btn .faq-icon {
   content: url('../images/faq/minus.png');
 }
 
+.faq-list-item.is-active .faq-btn:hover .faq-icon {
+  content: url('../images/faq/minus-hover.png');
+}
+
+.faq-list-item.is-active .faq-btn:focus .faq-icon {
+  content: url('../images/faq/minus-focus.png');
+}
+
 @media only screen and (min-resolution: 2dppx) {
+  .faq-btn .faq-icon {
+    content: url('../images/faq/plus@2x.png');
+  }
   .faq-list-item.is-active .faq-btn .faq-icon {
     content: url('../images/faq/minus@2x.png');
   }
-}
-
-.ac-panel {
-  overflow: hidden;
+  .faq-btn:hover .faq-icon {
+    content: url('../images/faq/plus-hover@2x.png');
+  }
+  .faq-btn:focus .faq-icon {
+    content: url('../images/faq/plus-focus@2x.png');
+  }
+  .faq-list-item.is-active .faq-btn:hover .faq-icon {
+    content: url('../images/faq/minus-hover@2x.png');
+  }
+  .faq-list-item.is-active .faq-btn:focus .faq-icon {
+    content: url('../images/faq/minus-focus@2x.png');
+  }
 }

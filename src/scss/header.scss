@@ -41,16 +41,16 @@
 }
 
 .burger-icon {
-  fill: #fdfeff;
+  fill: $_text_color;
   transition: color 150ms ease-in-out;
 }
 
 .burger-menu:hover .burger-icon {
-  fill: #ffddb2;
+  fill: $_hover_orange;
 }
 
 .burger-menu:focus .burger-icon {
-  fill: #ffba66;
+  fill: $_active_orange;
 }
 
 .desk-nav {
@@ -73,11 +73,11 @@
 }
 
 .header-nav-link:hover {
-  color: #ffddb2;
+  color: $_hover_orange;
 }
 
 .header-nav-link:focus {
-  color: #ffba66;
+  color: $_active_orange;
 }
 
 .thin-line {

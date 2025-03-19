@@ -58,11 +58,11 @@
 }
 
 .home-btn:hover {
-  background-color: #67ae19;
+  background-color: $_hover_green;
 }
 
 .home-btn:focus {
-  background-color: #356600;
+  background-color: $_active_green;
 }
 
 .btn-container {
