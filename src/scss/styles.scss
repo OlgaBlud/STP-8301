@@ -51,7 +51,7 @@ section {
 }
 
 .orange-gradient {
-  border-radius: 19px;
+  border-radius: 23px;
   padding: 4px;
   background: rgb(186, 100, 1);
   background: linear-gradient(
@@ -61,7 +61,7 @@ section {
   );
   @include media(desktop) {
     padding: 6px;
-    border-radius: 26px;
+    border-radius: 33px;
   }
 }
 
