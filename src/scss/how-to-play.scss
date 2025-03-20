@@ -81,11 +81,13 @@ how-to-play-item:last-child {
   }
 }
 .how-to-play-item-title {
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 17px;
   line-height: 1.18;
   @include media(desktop) {
     font-size: 24px;
+    margin-bottom: 16px;
   }
 }
 .how-to-play-text {
