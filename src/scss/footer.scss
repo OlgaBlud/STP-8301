@@ -22,12 +22,34 @@
   margin: 0 auto;
   max-width: 320px;
   display: flex;
+
   gap: 8px;
   flex-wrap: wrap;
   justify-content: space-between;
   @include media(desktop) {
     max-width: 1200px;
   }
+}
+.footer-policies-list-item:nth-child(1) {
+  order: 2;
+  @include media(desktop) {
+    order: 1;
+  }
+}
+.footer-policies-list-item:nth-child(2) {
+  order: 3;
+  @include media(desktop) {
+    order: 2;
+  }
+}
+.footer-policies-list-item:nth-child(3) {
+  order: 1;
+  @include media(desktop) {
+    order: 3;
+  }
+}
+.footer-policies-list-item:nth-child(4) {
+  order: 4;
 }
 
 .footer-policies-link,
